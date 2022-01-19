@@ -52,7 +52,7 @@ function changeStatusAppsByName($connect, $name, $status) {
   if ($connect->query($sql) === TRUE) { //если запрос крут и он выдал нам тру
     echo "Status was changed successfull";
   } else {
-    echo "Error: " . $sql . "<br>" . $conn->error; //пошёл в жопу
+    echo "Error: " . $sql . "<br>" . $connect->error; //пошёл в жопу
   }
 }
 
