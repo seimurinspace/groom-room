@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+
+  background: #FFFFFF;
+}
+
+.top-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 105px;
+  left: 0px;
+  top: 0px;
+
+  border: 1px solid #F2F2F2;
+}
+
+.title-cover {
+  position: static;
+  width: 190px;
+
+  left: 300px;
+
+
+  font-family: Roboto;
+  font-style: normal;
+
+  font-size: 16px;
+
+  color: #6D79EB;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 120px;
+}
+
+.reg-text {
+  color: #C7C7C7;
+}
+
+.title-cover h1 {
+  text-transform: uppercase;
+  color: #6D79EB;
+  font-size: 36px;
+}
+
+.title-cover p {
+  font-size: 15px;
+  color: rgb(202, 202, 202);
+
+}
+
+.link-menu {
+  position: absolute;
+  right: 150px;
+}
+
+.link-menu ul a {
+
+  padding: 0px;
+
+  position: static;
+  width: 680px;
+  height: 24px;
+  left: 400px;
+  top: 40.5px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 30px;
+}
+
+.main,
+.reg {
+  position: static;
+  width: 55px;
+  height: 14px;
+  left: 32px;
+  top: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  color: #6D79EB;
+  text-decoration: none;
+}
+
+.main img {
+  width: 23px;
+  margin: 0 5px;
+
+
+}
+
+.reg img {
+  width: 23px;
+  margin: 0 5px;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 358px;
+  justify-content: center;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 25px;
+  position: absolute;
+  width: 500px;
+  height: 358px;
+  top: 105px;
+  left: 125px;
+}
+
+.app-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 25px;
+  line-height: 14px;
+  position: absolute;
+  height: auto;
+  padding: 0px 40px 20px 40px;
+  top: 185px;
+  right: 120px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.app-form p {
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.app-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form input {
+  width: 260px;
+  height: 48px;
+  font-size: 15px;
+  border: none;
+  padding-left: 20px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.app-form input::-moz-selection {
+  border: none;
+}
+
+.v-message-style {
+  margin: 5px 0;
+  font-size: 15px;
+  width: 150px;
+  height: auto;
+}
+
+.app-form input::-moz-selection {
+  border: none;
+}
+
+.app-form input::selection {
+  border: none;
+}
+
+.app-select {
+  width: 280px;
+  height: 48px;
+  font-size: 15px;
+  border: none;
+  padding-left: 20px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  margin: 10px 0;
+  color: #696969;
+}
+
+.app-select:checked {
+  border: none;
+}
+
+.product h3 {
+  font-size: 18px;
+  color: red;
+}
+
+.submit {
+  width: 285px;
+  height: 48px;
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  background: #6D79EB;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  margin: 10px 0;
+  transition: all 0.4s ease;
+}
+
+.submit:hover {
+  background: #cacdf0;
+  transition: all 0.4s ease;
+}
+
+.content {
+  margin-top: 238px;
+  text-align: center;
+  font-family: Roboto;
+  height: auto;
+}
+
+.content h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.products {
+  position: static;
+  display: flex;
+  justify-self: center;
+
+  flex-wrap: wrap;
+
+  margin-left: 330px;
+  width: 880px;
+  height: auto;
+  left: 300px;
+  top: 48px;
+}
+
+.product {
+  margin: 30px 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 10px 10px;
+  width: 100%;
+  height: 101px;
+  left: 0px;
+  margin-top: 100px;
+
+  font-size: 15px;
+  color: #c7c7c7;
+  font-family: Roboto;
+  font-weight: 200;
+  background: #FAFAFA;
+}
+
+.reg-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 25px;
+  position: absolute;
+  width: 500px;
+  height: 358px;
+  top: 255px;
+  left: 125px;
+}
+
+.reg-title p {
+  font-weight: 200;
+  width: 400px;
+  margin-left: -100px;
+  margin-top: 10px;
+}
+
+.clicked {
+  color: black;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 25px;
+  line-height: 14px;
+  position: absolute;
+  height: 298px;
+  padding: 50px 40px 100px 40px;
+  top: 245px;
+  right: 120px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.reg-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-form input {
+  margin: 20px 0;
+  width: 260px;
+  height: 48px;
+  font-size: 20px;
+  border: none;
+  padding-left: 20px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  margin: 15px 0;
+
+}
+
+.reg-form a {
+  color: #c7c7c7;
+  text-decoration: none;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.zoo img {
+  width: 297px;
+  position: absolute;
+  top: 129px;
+  right: 160px;
+  z-index: 1;
+}
+
+.footerreg {
+  position: absolute;
+  bottom: -600px;
+  ;
+}
+
+.app-one {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 15px 20px;
+}
+
+.mainapp,
+.apptext,
+.cabinet {
+  position: static;
+  width: 55px;
+  height: 14px;
+  left: 32px;
+  top: 5px;
+  color: #c7c7c7;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  text-decoration: none;
+}
+
+.mainapp img,
+.apptext img,
+.cabinet img {
+  width: 21px;
+  margin: 0 7px;
+}
+
+.app-text {
+  color: #6D79EB;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.app-one {
+  width: 700px;
+  height: 170px;
+  margin: 20px 0 20px 200px;
+  display: flex;
+}
+
+.app-one img {
+  width: 150px;
+}
+
+.app-one h3 {
+  margin: 8px 10px;
+  font-size: 20px;
+}
+
+.app-html {
+  margin-top: 200px;
+}
+
+.app-title {
+  margin-bottom: 80px;
+}
+
+.error__text {
+  font-size: 15px;
+  color: #c7c7c7;
+  margin: 20px 20px;
+}
