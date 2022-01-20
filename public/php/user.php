@@ -14,7 +14,7 @@ function reg($connect, $login, $password) {
 }
 //authorization
 function auth($connect, $login, $password) {
-  $users =  mysqli_query($conn, "SELECT * FROM `users`");
+  $users =  mysqli_query($connect, "SELECT * FROM `users`");
   $vars = [];
   while ($var = mysqli_fetch_assoc($users)) { //рулит этой игрой, позволяя высунуть всё в виде некого массива и приравнять к массиву переменную 
     array_push($vars, [$var['login'], $var['password']]); // просто выплёвываем логины и пароли в vars
@@ -33,3 +33,4 @@ function auth($connect, $login, $password) {
     echo 'Invalid data entered';
   }
 }
+// auth($connect, "2", "3");

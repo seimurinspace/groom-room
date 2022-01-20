@@ -2,7 +2,7 @@
 // Variable assignement
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $db = "groom-room";
 
 // Create connection

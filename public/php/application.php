@@ -6,6 +6,7 @@ echo '<br>';
 //add application to table
 
 function addApp($connect, $name, $category) {
+  $date = date("Y-m-d");
   $sql = "INSERT INTO `applications` (`id`, `name`, `img-before`, `img-after`, `timestamp`, `category`, `status`) VALUES (NULL, '$name', '1', '1', '$date', '$category', 'new')"; // добавялет наши данные
   if ($connect->query($sql) === TRUE) { //еслиз запрос прошёл успешно
     echo "New application created successfully";
@@ -46,6 +47,7 @@ function getAppsById($connect, $id) {
   }
 }
 
+
 //change status for app by name
 function changeStatusAppsByName($connect, $name, $status) {
   $sql = "UPDATE `applications` SET `status` = '$status' WHERE `name` = '$name'"; //запрос на замену, если имя в таблице равно нашему имени, которое выбрали
@@ -65,3 +67,4 @@ function removeAppsByName($connect, $name) {
     echo "Error: " . $sql . "<br>" . $connect->error;
   }
 }
+removeAppsByName($connect, "kozel");
